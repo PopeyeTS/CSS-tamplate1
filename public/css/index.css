@@ -1,136 +1,263 @@
-:root {
-  background-color: aqua;
+.page,
+.page * {
+  box-sizing: border-box;
 }
-* {
-  color: black;
+.page {
+  background: #ffffff;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
-
-h1 {
-  background-color: blue;
+.div-d-flex {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #dee2e6;
+  border-width: 0px 0px 1px 0px;
+  padding: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 960px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-.green {
-  color: green;
+.bootstrap-solid-svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
 }
-
-#blue {
-  color: blue;
+.bootstrap-solid-svg2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+  overflow: hidden;
 }
-.box div {
-  background-color: green;
+.group {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
-
-.box p {
-  background-color: red;
+.nav-my-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.brown {
-  background-color: brown;
-  color: white;
-}
-ul > li {
-  background-color: red;
-}
-
-.header-button + span {
-  background-color: red;
-}
-
-.susid ~ p {
-  background-color: blue;
-  color: white;
-}
-
-.salo,
-#bread {
-  background-color: yellow;
-}
-
-.first-task li:first-child {
-  color: white;
-}
-
-.second-task ul:first-child li:first-child {
-  color: yellow;
-}
-
-.third-task ul:last-child li:first-child {
-  color: yellow;
-}
-
-.four-task li:last-child {
-  background-color: yellow;
-}
-
-.five-task ul:last-child li:last-child {
-  color: white;
-}
-
-.only-child-task div:only-child {
-  color: red;
+.header {
+  color: #343a40;
+  text-align: left;
+  font: 400 16px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.seven-task p:first-of-type {
-  background-color: red;
+.frame-992 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.eight-task p:last-of-type {
-  background-color: red;
+.hero-title {
+  color: #212529;
+  text-align: center;
+  font: 500 56px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.text-wrapper p:only-of-type {
-  background-color: yellow;
+.hero-text {
+  color: #212529;
+  text-align: center;
+  font: 400 20px/150% 'Roboto', sans-serif;
+  position: relative;
+  width: 584.07px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.div-card-deck {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
 
-.lesson-three-task-one a[href] {
-  color: white;
+  flex-shrink: 0;
+  position: relative;
+  width: 960px;
 }
-
-.lesson-three-task-two *[value] {
-  color: yellow;
+.div-card {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  padding: 1px 1px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
 }
-
-.lesson-three-task-three *[value='3'] {
-  background-color: red;
+.div-card-header {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 3px 3px 0px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 0px 0px 1px 0px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.lesson-three-task-four button[class*='primary'] {
-  background-color: blue;
+.name {
+  color: #212529;
+  text-align: center;
+  font: 400 24px/28.8px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.lesson-three-task-five button[class|='secondary'] {
-  background-color: red;
+.div-card-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.lesson-three-task-six *[class^='b'] {
-  color: green;
+.h-1-card-title {
+  padding: 0px 69px 0px 69px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.lesson-three-task-seven *[class*='on'] {
-  color: green;
-  background-color: white;
+.price {
+  color: #212529;
+  text-align: center;
+  font: 500 40px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.lesson-three-task-eight *[class$='s'] {
-  background-color: yellow;
+.mo {
+  color: #6c757d;
+  text-align: center;
+  font: 400 25px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.lesson-three-task-nine h2::first-letter {
-  color: red;
+.ul-list-unstyled {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
-
-.lesson-three-task-ten p::first-line {
-  background-color: yellow;
+.ul-li {
+  color: #212529;
+  text-align: center;
+  font: 400 16px 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.lesson-three-task-eleven input::placeholder {
-  background-color: red;
+.footer {
+  background: #ffffff;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 960px;
+  position: relative;
 }
-
-.lesson-three-task-twelve li::before {
-  content: '➤';
+.div-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  gap: 30%;
 }
-
-.lesson-three-task-thirteen li::after {
-  content: '➤';
+.div-col-6 {
+  padding: 1px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-title {
+  color: #212529;
+  text-align: left;
+  font: 500 20px 'Roboto', sans-serif;
+  position: relative;
+  align-self: stretch;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ul-list-unstyled2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
